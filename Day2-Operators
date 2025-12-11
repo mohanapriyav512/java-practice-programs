@@ -263,67 +263,213 @@ public class Main
     }
 }
 
-Formula Based
+Formula based
+
 Q1.Write a Java Program to find area of Rectangle
 import java.util.Scanner;
-public class Main
+public class hello
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int length=sc.nextInt();
         int breadth=sc.nextInt();
-        System.out.println("Area of rectangle is "+(length*breadth));
-}
+        System.out.println("Area of rectangle: "+(length*breadth));
+    }
 }
 
-Q2.Write a Java Program to find area of Square 
+Q2.Write a Java Program to find area of Square
 import java.util.Scanner;
-public class Main
+public class hello
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int side=sc.nextInt();
-        System.out.println("Area of square is "+(side*side));
-}
+        System.out.println("Area of square: "+(side*side));
+    }
 }
 
 Q3.Write a Java Program to find area of Triangle
 import java.util.Scanner;
-public class Main
+public class hello
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        double base=sc.nextInt();
-        double height=sc.nextInt();
-        System.out.println("Area of triangle is "+(0.5*base*height));
-}
+        int base=sc.nextInt();
+        int height=sc.nextInt();
+        System.out.println("Area of triangle: "+(0.5*base*height));
+    }
 }
 
 Q4.Write a Java Program to find area of circle
 import java.util.Scanner;
-public class Main
+public class hello
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         double radius=sc.nextInt();
-        System.out.println("Area of circle is "+(3.14*radius*radius));
-}
+        System.out.println("Area of circle: "+(3.14*radius*radius));
+    }
 }
 
-
+Q5.Write a Java Program to find the distance between two points
 import java.util.Scanner;
-public class Main
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double x1=sc.nextDouble();
+        double x2=sc.nextDouble();
+        double y1=sc.nextDouble();
+        double y2=sc.nextDouble();
+        double distance=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+        System.out.println("Distance betwwen two points is: "+distance);
+    }
+}
+Q6.Write a Java Program to calculate Fahrenheit to Celsius
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double fahrenheit=sc.nextDouble();
+        double celsius=(fahrenheit-32)*5/9;
+        System.out.println("Celsius: "+celsius);
+    }
+}
+
+Q7.Write a Java Program to calculate Celsius to Fahrenheit
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double celsius=sc.nextDouble();
+        double fahrenheit=(celsius*9/5)+32;
+        System.out.println("Fahrenheit: "+fahrenheit);
+    }
+}
+
+Q8.Write a Java Program to find Perimeter of a Square
+import java.util.Scanner;
+public class hello
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int side=sc.nextInt();
-        System.out.println("Perimeter of square is "+(4*side*side));
+        System.out.println("Perimeter of square: "+(4*side));
+    }
 }
+
+Q9.Write a Java Program to find Perimeter of a Rectangle
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Perimeter of rectangle: "+(2+(l*b)));
+    }
 }
+
+Q10.Write a Java Program to find Perimeter of a Triangle
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        System.out.println("Perimeter of triangle: "+(a+b+c));
+    }
+}
+
+Q11.Write a Java Program to find Circumference of a Circle
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double radius=sc.nextDouble();
+        System.out.println("Circumference of circle: "+(2*3.14*radius));
+    }
+}
+
+Q12.Write a Java Program to find Surface Area, Volume, and Perimeter of a Cube
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[]) 
+{
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double surfaceArea = 6 * a * a;
+        double volume = a * a * a;
+        double perimeter = 12 * a;
+        System.out.println("Surface Area of Cube = " + surfaceArea);
+        System.out.println("Volume of Cube = " + volume);
+        System.out.println("Perimeter of Cube = " + perimeter);
+    }
+}
+
+Q13.Write a Java Program to find Surface Area and Volume of a Cuboid
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[]) 
+{
+        Scanner sc = new Scanner(System.in);
+        double length = sc.nextDouble();
+        double width = sc.nextDouble();
+        double height = sc.nextDouble();
+        double volume = length * width * height;
+        System.out.println("Volume of the cuboid: " + volume);
+        System.out.println("Surface area of the cuboid: " + surfaceArea);
+    }
+}
+
+Q14.Write a Java Program to find Surface Area and Volume of a Sphere
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[]) 
+{
+        Scanner sc = new Scanner(System.in);
+        double radius = sc.nextDouble();
+        double volume = (4/3) * 3.14 * radius * radius * radius;
+        double surfaceArea = 4 * 3.14* radius * radius;
+        System.out.println("Volume of the sphere: " + volume);
+        System.out.println("Surface area of the sphere: " + surfaceArea);
+    }
+}
+
+Q15.Write a Java Program to find Surface Area and Volume of a cylinder
+import java.util.Scanner;
+public class hello
+ {
+    public static void main(String args[])
+ {
+        Scanner sc = new Scanner(System.in);
+        double radius = sc.nextDouble();
+        double height = sc.nextDouble();
+        double volume = 3.14 * radius * radius * height;
+        double surfaceArea = 2 * 3.14* radius * (radius + height);
+        System.out.println("Volume of the cylinder: " + volume);
+        System.out.println("Surface area of the cylinder: " + surfaceArea);
+    }
+}
+
 
 
