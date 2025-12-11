@@ -1,0 +1,329 @@
+Basic programs
+
+Q1.Write a Java Program to print sum of two numbers
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int a=5,b=5;
+    System.out.println(“Sum: “+(a+b));
+}
+}
+
+Q2.Write a Java Program to print difference of two numbers
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int a=10,b=5;
+    System.out.println("Difference: "+(a-b));
+}
+}
+
+Q3.Write a Java Program to print product of two numbers
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int a=10,b=5;
+    System.out.println("Product: "+(a*b));
+}
+}
+
+Q4.Write a Java Program to print Quoficient of two numbers
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int a=10,b=5;
+    System.out.println("Quoficient: "+(a/b));
+}
+}
+
+Q5.Write a Java Program to print remainder of two numbers
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    int a=10,b=3;
+    System.out.println("Remainder: "+(a%b));
+}
+}
+
+Q6.Write a Java Program to Swap two numbers using third variable
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+   System.out.println("Before Swapping:a="+a+" "+"b="+b);
+    int c=a;
+    a=b;
+    b=c;
+    System.out.println("After Swapping:a="+a+" "+"b="+b);
+}
+}
+
+Q7.Write a Java Program to Swap of two numbers without using third variable
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    System.out.println("Before Swapping:a="+a+" "+"b="+b);
+    a=a-b;
+    b=a+b;
+    a=b-a;
+    System.out.println("After Swapping:a="+a+" "+"b="+b);
+}
+}
+
+Q8.Java Program to print the last digit of given number N
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    System.out.println("Last digit of " +a +" is: "+(a%10));
+}
+}
+
+Q9.Java Program to print the all digits Except last digit of given number N
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    System.out.println("Last digit of " +a +" is: "+(a/10));
+}
+}
+
+Q10.Write a Java Program to print the sum of the first and last digit of a 3-digit number.
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int dig=sc.nextInt();
+    int firstdig=dig/100;
+    int lastdig=dig%10;
+    System.out.println("Sum of first and last digit in given 3-digit number is:      "+(firstdig+lastdig));
+}
+}
+
+Q11.Write a Java Program to print the middle digit of a 3-digit number.
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int dig=sc.nextInt();
+    int m1=dig%100;
+    int m2=m1/10;
+    System.out.println("Middle digit of the given 3-digit number is: "+m2);
+}
+}
+
+Q12.Write a Java Program to print the absolute value of a given number.
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int num=sc.nextInt();
+    int absval=(num<0)?-num:num;
+    System.out.println("The Absolute value of "+num+" is: "+absval);
+}
+}
+
+Q13. Write a Java Program to print the square of a given number
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int num=sc.nextInt();
+    int sqr=num*num;
+    System.out.println("The Square of "+num+" is: "+sqr);
+}
+}
+
+Q14. Write a Java Program to print the cube of a given number
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int num=sc.nextInt();
+    int cube=num*num*num;
+    System.out.println("The Cube of "+num+" is: "+cube);
+}
+}
+
+Q15. Write a Java Program to calculate the average of three numbers
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    int avg=(a+b+c)/3;
+    System.out.println("The Average of "+a+","+b+","+c+","+"is: "+avg);
+}
+}
+
+Q16.Write a Java Program to check whether two numbers are equal True if equal else False.
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    boolean c=(a==b);
+    System.out.println(c);
+}
+}
+
+Q17.Write a Java Program to check if a number is power of 2 using bitwise AND.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        boolean res=(a>0)&&((a&(a-1))==0);
+        System.out.println(a+(res?" is the power of 2":" not a power of 2"));
+}
+}
+
+Q18.Write a Java Program to print whether a number is positive or negative.
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int num=sc.nextInt();
+    String res=(num>=0)?"Positive":"Negative";
+    System.out.println(res);
+}
+}
+
+Q19.Write a Java Program to find the greatest of three numbers.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        int gno=(a>b)?(a>c?a:c):(b>c?b:c);
+        System.out.println("Greatest no is "+gno);
+    }
+}
+
+Q20.Write a Java Program to print pass/fail result based on marks.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int mark=sc.nextInt();
+        String result=(mark>=30)? "Pass" : "Fail";
+        System.out.println("Result: "+result);
+    }
+}
+
+Formula Based
+Q1.Write a Java Program to find area of Rectangle
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int length=sc.nextInt();
+        int breadth=sc.nextInt();
+        System.out.println("Area of rectangle is "+(length*breadth));
+}
+}
+
+Q2.Write a Java Program to find area of Square 
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int side=sc.nextInt();
+        System.out.println("Area of square is "+(side*side));
+}
+}
+
+Q3.Write a Java Program to find area of Triangle
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double base=sc.nextInt();
+        double height=sc.nextInt();
+        System.out.println("Area of triangle is "+(0.5*base*height));
+}
+}
+
+Q4.Write a Java Program to find area of circle
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        double radius=sc.nextInt();
+        System.out.println("Area of circle is "+(3.14*radius*radius));
+}
+}
+
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int side=sc.nextInt();
+        System.out.println("Perimeter of square is "+(4*side*side));
+}
+}
+
+
