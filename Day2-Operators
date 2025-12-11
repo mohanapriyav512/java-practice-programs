@@ -471,5 +471,209 @@ public class hello
     }
 }
 
+Detailed Scenario / Description
 
+Q1.A shop offers festival discounts. The customer enters the original price and discount percentage. The program must calculate the discount amount and the final price payable after applying the discount.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int original_price=1000;
+        int discount_percentage=10;
+        float discount_amount=original_price/discount_percentage;
+        float final_price=original_price-discount_amount;
+        System.out.println("Discount Amount:"+discount_amount+"Final Price:"+final_price);
+}
+}
 
+Q2.A student measures experiment time in minutes but needs the time in seconds. The program should convert minutes into seconds.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int minutes=5;
+        int seconds=minutes*60;
+        System.out.println("Seconds: "+seconds);
+}
+}
+
+Q3.Three friends eat at a restaurant and get a single bill. They want to split the total bill equally. The program calculates how much each friend must pay.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int total_bill=1500;
+        int eachfrnd_pay=1500/3;
+        System.out.println("Each Friend Pays: "+eachfrnd_pay);
+}
+}
+
+Q4.A person drives at a constant speed. Given the speed (km/hr) and time (hr), the program must calculate the distance travelled using: distance = speed × time.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int speed=60;
+        int time=2;
+        int distance=speed*time;
+        System.out.println("Distance: "+distance+" km");
+}
+}
+
+Q5.A fitness trainer tracks running distances in meters. Athletes give distance in kilometers, so the program converts km → meters.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int km=3;
+        int meters=km*1000;
+        System.out.println("Meters: "+meters);
+}
+}
+
+Q6.A computer networks student wants to convert bytes into bits. Since 1 byte = 8 bits, the program multiplies accordingly.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int Bytes=4;
+        int Bits=Bytes*8;
+        System.out.println("Bits: "+Bits);
+}
+}
+
+Q7.A teacher distributes candies equally among students. The program finds how many candies each student gets and how many remain undistributed.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int Candies=50;
+        int Students=6;
+        int each_gets=Candies/Students;
+        int remaining=Candies%Students;
+        System.out.println("Each Gets: "+each_gets+"Remaining: "+remaining);
+}
+}
+
+Q8.A bakery produces a fixed number of cakes every hour. Given cakes per hour and total hours, the program calculates total cakes made.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int cakesperhr=10;
+        int hours=5;
+        int total_cakes=cakesperhr*hours;
+        System.out.println("Total Cakes: "+total_cakes);
+}
+}
+
+Q9.A person deposits money in the bank. Using the formula SI = (P × R × T) / 100, the program computes simple interest.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int principle=5000;
+        int rate=5;
+        int time=2;
+        float si=(principle*rate*time)/100;
+        System.out.println("Simple Interest: "+si);
+}
+}
+
+Q10.A company calculates employee salary using: Basic + HRA + Allowance. The program must compute the total salary.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int basic=20000;
+        int hra=5000;
+        int allowance=3000;
+        int total_salary=basic+hra+allowance;
+        System.out.println("Total Salary: "+total_salary);
+    
+}
+}
+
+Q11.A shopkeeper sells an item at a profit. Given cost price and profit, calculate the selling price using: SP = CP + Profit.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int CP=500;
+        int Profit=100;
+        int SP=CP+Profit;
+        System.out.println("Selling Price: "+SP);
+    
+}
+}
+
+Q12.A product is sold at a loss. Given selling price and loss amount, the program calculates the cost price using: CP = SP + Loss.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int SP=400;
+        int Loss=50;
+        int CP=SP+Loss;
+        System.out.println("Cost Price: "+CP);
+    
+    }
+}
+
+Q13.A fruit shop has an offer: Buy 3 mangoes and get 1 free. Based on the mango price and total mangoes purchased, compute total mangoes received and amount to pay.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int mango_price=20;
+        int buy=10;
+        int total_mango=buy/3+buy;
+        int amount=mango_price*buy;
+        System.out.println("Total Mangoes: "+total_mango+"Amount: "+amount);
+    }
+}
+
+Q14. A stationery shop offers: Buy 5 pens, pay only for 3. Given price per pen and pens bought, the program calculates how many pens need to be paid for and total cost.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int pen_price=10;
+        int buy=12;
+        int payforpens=12/5;
+        int remainingpens=12%5;
+        int payfor=payforpens*3+remainingpens;
+        int amount=payfor*pen_price;
+        System.out.println("Pay For: "+payfor+"Amount: "+amount);
+    }
+}
+
+Q15.An ATM dispenses money in ₹2000, ₹500, and ₹100 notes. For a given amount, calculate the number of each note required (highest denomination first).
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        int amount=3700;
+        int note1=amount/2000;
+        int bal1=amount%2000;
+        int note2=bal1/500;
+        int bal2=bal1%500;
+        int note3=bal2/100;
+        System.out.println("2000 Notes: "+note1+"500 Notes: "+note2+"100 Notes: "+note3);
+    }
+}
