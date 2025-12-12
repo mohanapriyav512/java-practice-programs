@@ -1,0 +1,175 @@
+INPUT OUTPUT STATEMENTS
+
+Q1.Write a Java Program to Print Welcome.
+import java.util.Scanner;
+public class Main
+{
+public static void main (String[] args) 
+{
+    System.out.println("Welcome");
+}
+}
+
+Q2.Write a Java Program to Print the given word.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        String a="Mohana";
+        System.out.println(a);
+    }
+}
+
+Q3.Write a Java Program to Print the given Message.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+        {
+            String str="Welcome to java programming";
+            System.out.println(str);
+        }
+}
+
+Q4.Write a Java Program to print the given integer number.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int a=5;
+        System.out.println(a);
+    }
+}
+
+Q5.Write a Java Program to print the given fractional number.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        double num=21.123;
+        System.out.println(num);
+    }
+}
+
+Q14.Write a Java Program to print two numbers with a tab space between them.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int a=5,b=11;
+        System.out.println(a+" "+b);
+    }
+}
+
+Q15.Write a Java Program to print two numbers in two lines.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int a=5,b=11;
+        System.out.println(a+"\n"+b);
+    }
+}
+
+Q16.Write a Java Program to print a character in single quotes.
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(5);
+        System.out.println("\'" + ch + "\'");
+    }
+}
+
+Q17.Write a Java Program to print two words in double quotes.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        System.out.println("\"Hello World\"");
+    }
+}
+
+Q18.Write a Java Program to print your date of birth in the format DD/MM/YYYY.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int date=05;
+        int month=12;
+        int year=2004;
+        System.out.println(date+ "/" +month+ "/" +year);
+    }
+}
+
+Q19.Write a Java Program to print an integer with a plus sign (+) before it.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int a=5;
+        System.out.println("+"+a);
+    }
+}
+
+
+
+
+Q21.Write a Java Program to print your roll number and name in the format: Roll No: 123, Name: John
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args) 
+{
+        int rollNo = 121;
+        String name = "Mohana Priya V";
+
+        System.out.println("ROLL NO: " + rollNo + ",Name: " +name);
+   }
+}
+
+Q22.Write a Java Program to print your marks in 5 subjects each on a new line.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int Tamil=96,English=95,Science=92,Maths=85,Social=98;            
+        System.out.println(Tamil+"\n"+English+"\n"+Science+"\n"+Maths+"\n"+Social);
+    }
+}
+
+Q23.Write a Java Program to print your blood group.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String group=sc.nextLine();
+        System.out.println(group);
+    }
+}
+
+Q25.Write a Java Program to print your address in multiple lines using \n.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        
+        System.out.println("2/300,cheran residency,premier nagar \nothakkalmandapam,coimbatore,tamilnadu,\nindia-641032.");
+    }
+}
+
+
