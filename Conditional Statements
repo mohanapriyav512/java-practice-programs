@@ -347,21 +347,87 @@ public class hello
     }
 }
 
+Character Based
 
+Q1. Java Program to check whether a given character is a vowel or consonant.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        //Scanner sc=new Scanner(System.in);
+        //char ch=sc.next().toUpperCase().charAt(0);
+        char ch='B';
+        char lch=Character.toLowerCase(ch);
+        if(lch=='a'||lch=='e'||lch=='i'||lch=='o'||lch=='u')
+          System.out.println("vowel");
+        else
+          System.out.println("consonant");
+    }
+}
 
+Q2. Java Program to check whether a given character is uppercase, lowercase, digit, or special symbol
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if(ch>='A' && ch<='Z')
+            System.out.println("Uppercase");
+        else if(ch>='a' && ch<='z')
+            System.out.println("Lowercase");
+        else if(ch>='0' && ch<='9')
+            System.out.println("digit");
+        else
+            System.out.println("special character");
+    }
+}
 
+Q3. Java Program to check whether a character is alphabet or not
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if(ch>='A' && ch<='Z' || ch>='a' && ch<='z')
+            System.out.println("alphabet");
+        else
+            System.out.println("not alphabet");
+    }
+}
 
+Q4. Java Program to check whether a character is a digit or not
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if(ch>='0' && ch<='9')
+            System.out.println("digit");
+        else
+            System.out.println("not digit");
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+Q5. Java Program to check whether two characters are equal or not
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        char ch1=sc.next().charAt(0);
+        char ch2=sc.next().charAt(0);
+        if(ch1==ch2)
+            System.out.println("equal");
+        else
+            System.out.println("not equal");
+    }
+}
 
