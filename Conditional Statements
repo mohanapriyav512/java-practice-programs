@@ -431,3 +431,154 @@ public class hello
     }
 }
 
+Geometry based
+
+Q1. Java Program to check whether a triangle is equilateral, isosceles, or scalene
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int side1=sc.nextInt();
+        int side2=sc.nextInt();
+        int side3=sc.nextInt();
+        if(side1==side2 &&side2==side3)
+            System.out.println("equilateral");
+        else if(side1==side2 || side1==side3 ||side2==side3)
+            System.out.println("isosceles");
+        else
+            System.out.println("Scalene");
+    }
+}
+
+Q2. Java Program to check whether a triangle is right-angled or not
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if((a*a)+(b*b)==c*c || (a*a+c*c==b*b) || (b*b+c*c==a*a))
+            System.out.println("Right-angled triangle");
+        else
+            System.out.println("not right-angled triangle");  
+    }
+}
+
+Q3. Java Program to check whether a point (x, y) lies in which quadrant
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        if(x>0 && y>0)
+            System.out.println("1 Quadrant");
+        else if(x<0 && y>0)
+            System.out.println("2 Quadrant");
+        else if(x<0 && y<0)
+            System.out.println("3 Quadrant");
+        else
+            System.out.println("4 Quadrant");
+    }
+}
+
+Q4. Java Program to check whether the sum of three angles forms a valid triangle.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int z=sc.nextInt();
+        if(x>=0 &&y>=0 &&z>=0)
+        {
+           int sum=x+y+z;
+            if (sum==180)
+            System.out.println("angles form Valid triangle");
+            else
+            System.out.println("angles does not form a Valid triangle");
+        }
+        else
+            System.out.println("provide angles");
+        
+    }
+}
+
+
+Q5. Java Program to check whether three sides form a valid triangle
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int z=sc.nextInt();
+        if(x>=0 && y>=0 &&z>=0)
+        {
+        if(x+y>z && x+z>y && y+z>x)
+            System.out.println("Valid triangle");
+        else
+            System.out.println("not a Valid triangle");
+        }
+        else
+            System.out.println("provide positive angles");
+    }
+}
+
+Q6. Write a Java Program to check whether four sides form a square or rectangle.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the four sides IN ORDER:");
+        int s1=sc.nextInt();
+        int s2=sc.nextInt();
+        int s3=sc.nextInt();
+        int s4=sc.nextInt();
+        if (s1 > 0 && s2 > 0 && s3 > 0 && s4 > 0)
+        {
+            if (s1 == s2 && s2 == s3 && s3 == s4) 
+                System.out.println("square");
+            else if (s1 == s3 && s2 == s4) 
+                System.out.println("Rectangle");
+            else 
+                System.out.println("Sides do not form square or rectangle.");
+        }
+        else
+          System.out.println("enter valid sides ");
+    }
+}
+
+Q7. Java Program to calculate the distance between two points (x1,y1) and (x2,y2).
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the four sides IN ORDER:");
+        double x1=sc.nextDouble();
+        double x2=sc.nextDouble();
+        double y1=sc.nextDouble();
+        double y2=sc.nextDouble();
+        double x=x1-x2;
+        double y=y1-y2;
+        double xy=(x*x)+(y*y);
+        double dis= Math.sqrt(xy);
+        System.out.println("Distance: "+dis);
+}
+}
+
