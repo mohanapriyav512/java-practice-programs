@@ -582,3 +582,111 @@ public class hello
 }
 }
 
+Year based
+
+Q1. Java Program to check whether a year is a leap year or not
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num%4==0 && num%100!=0 && num%400==0)
+            System.out.println("leap year");
+        else
+            System.out.println("not leap year");
+}
+}
+
+Q2.Java Program to check whether a given year is a century year or not.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        int cyr= year%100;
+        if (cyr==0) 
+            System.out.println("century year");
+        else
+            System.out.println(" not century year");        
+}
+}
+
+
+
+Q3.Java Program to check whether the first two digits and last two digits of a year are equal.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        int first2no = year/100;
+        int last2no= year%100;
+        if (first2no == last2no) 
+            System.out.println("equal.");
+        else
+            System.out.println(" not equal.");
+         
+}
+}
+
+Q4.Java Program to check whether two given years have the same last digit.
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int year1 = sc.nextInt();
+        int year2=sc.nextInt();
+        int lastdig1= year1%10;
+        int lastdig2= year2%10;
+        if (lastdig1==lastdig2) 
+            System.out.println("equal.");
+        else
+            System.out.println(" not equal.");
+         
+}
+}
+
+
+Q5.Write a Java Program to check whether a given year and month combination is valid and print the number of days in that month (consider leap years for February).
+import java.util.Scanner;
+public class hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        int month = sc.nextInt();
+        if (month<1 || month >12) 
+            System.out.println("Invalid month");
+        else 
+        {
+            int days = 0;
+            switch (month) 
+            {
+                case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+                    days = 31;
+                    break;
+                case 4:case 6:case 9:case 11:
+                    days = 30;
+                    break;
+                case 2:
+                    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) 
+                        days = 29;
+                    else 
+                        days = 28;
+                    break;
+            }
+            System.out.println("valid combination");
+            System.out.println("Number of days in month " +month+ " of year " +year+ " is: " +days);
+        }
+    }
+}
+
