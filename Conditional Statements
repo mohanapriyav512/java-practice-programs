@@ -690,3 +690,685 @@ public class hello
     }
 }
 
+Switch
+Q1.Java Program to Arithmetic Calculator using switch case Statements
+   import java.util.Scanner;
+public class cd
+{
+   public static void main(String[] args)
+          {
+       Scanner sc=new Scanner(System.in);
+       char op=sc.nextLine().charAt(0);
+       int a=sc.nextInt();
+       int b=sc.nextInt();
+       switch(op)
+       {
+        case '+':
+            System.out.println((a+b));
+            break;
+        case '-':
+            System.out.println((a-b));
+            break;
+        case '*':
+            System.out.println((a*b));
+            break;
+        case '/':
+             System.out.println((a/b));
+            break;
+        case '%':
+             System.out.println((a%b));
+            break;
+        default:
+            System.out.println("invalid op");
+
+       }
+    }
+}
+
+Q2.Java Program to check grade of a student based on marks (A, B, Java, Fail)
+import java.util.Scanner;
+public class cd 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int mark = sc.nextInt();
+        if (mark<0||mark>100) {
+            System.out.println("Invalid mark");
+        } 
+        else 
+        {
+
+            switch (mark / 10)
+            {
+                case 10:
+                case 9:
+                    System.out.println("A");
+                    break;
+                case 8:
+                    System.out.println("B");
+                    break;
+                case 7:
+                    System.out.println("C");
+                    break;
+                case 6:
+                    System.out.println("Fail");
+                    break;
+                default:
+                    System.out.println("Below 60");
+                    break;
+            }
+        }
+    }
+}
+
+Q3.Java Program to check whether the given day number (1–7) is a weekday or weekend
+import java.util.Scanner;
+public class cd 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int day= sc.nextInt();
+            switch(day)
+            {
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    System.out.println("WEAKDAY");
+                    break;
+                case 1:
+                case 7:
+                    System.out.println("WEAKEND");
+                    break;
+                default:
+                    System.out.println("INVALID DAY");
+                    break;
+            }
+        }
+    }
+
+Q4.Write a Java Program using switch case to print the season based on month number(Winter, Spring, Summer, Autumn).
+import java.util.Scanner;
+public class cd 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int day= sc.nextInt();
+            switch(day)
+            {
+                case 12:
+                case 1:
+                case 2:
+                    System.out.println("Winter");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println("Summer");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    System.out.println("Rainy");
+                    break;
+                case 9:
+                    System.out.println("autum");
+                    break;
+                default:
+                    System.out.println("INVALID month");
+                    break;
+            }
+        }
+    }
+
+Q5.Java Program using switch to implement a mini ATM simulation
+import java.util.Scanner;
+public class cd
+ {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int balance = 1000;
+            int choice = sc.nextInt();
+            switch (choice) 
+            {
+                case 1:
+                    System.out.println("Balance:" + balance);
+                    break;
+                case 2:
+                    System.out.print("Enter amount: ");
+                    int dep = sc.nextInt();
+                    balance += dep;
+                    System.out.println("Deposited");
+                    break;
+                case 3:
+                    System.out.print("Enter amount: ");
+                    int draw = sc.nextInt();
+                    if (draw <= balance) {
+                        balance -= draw;
+                        System.out.println("Withdrawn");
+                    } else {
+                        System.out.println("No enough money");
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        }
+ }
+
+Scenario based
+
+Q1.Write a Java Program to calculate different discount for different Bill amount
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   int billamt=sc.nextInt();
+   int dis=0;
+   if(billamt>=5000)
+   {
+    dis=50;
+   }
+   else if(billamt>=3000)
+    dis=30;
+else if(billamt>=2000)
+    dis=20;
+else if(billamt>=1000)
+    dis=10;
+
+else
+{
+    dis=0;
+}
+double disprice=(billamt*dis)/100.0;
+double finalprice=billamt-disprice;
+
+System.out.println(disprice);
+System.out.println(finalprice);
+}
+}
+
+Q2.Write a Java Program to check whether a person is eligible to vote (age ≥ 18)
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   int age=sc.nextInt();
+   if(age>=18)
+    System.out.println("elligible");
+  else if(age<0)
+    System.out.println("invalid age");
+   else
+    System.out.println("not elligible");
+}
+}
+
+Q3.Write a Java Program to check whether a person is eligible for senior citizen benefits (age ≥ 60)
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   int age=sc.nextInt();
+   if(age>=60)
+    System.out.println("elligible for senior citizen benefits");
+   else if(age<0)
+    System.out.println("invalid age");
+else
+    System.out.println("not elligible");
+}
+}
+
+Q4.Write a Java program to display mobile Battery Javaheck – "Low Battery", "50% Javaonsumed", or "Battery Full".
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   int battery_percent=sc.nextInt();
+   if(battery_percent==100)
+    System.out.println("battery full");
+   else if(battery_percent>=50)
+    System.out.println("50% consumed");
+   else if(battery_percent<=0 && battery_percent<=10)
+    System.out.println("low battery");
+else
+    System.out.println("enter valid percent");
+}
+}
+
+Q5.Write a Java program to check if temperature is above 100 (fever check).
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   int degree=sc.nextInt();
+   if(degree>100)
+    System.out.println("fever");
+   else if(degree>=95 && degree<=100)
+    System.out.println("mild fever");
+   else if(degree>=90 && degree<=95)
+    System.out.println("stage1 fever");
+   else if(degree<=90)
+    System.out.println("normal temp");
+   else
+    System.out.println("enter valid degree ");
+}
+}
+
+Q6.Write a Java program to check pass/fail based on marks (marks ≥ 35 = pass).
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   int mark=sc.nextInt();
+   if(mark>=35 && mark<=100)
+    System.out.println("pass");
+   else if(mark<0)
+    System.out.println("enter valid mark");
+   else
+    System.out.println("fail");
+}
+}
+
+Q7.Write a Java program to calculate electricity bill using slab rates (0–100 free, 101–300 = ₹5/unit, >300 = ₹10/unit) and apply surcharge if consumption exceeds 500 units.
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("units consumed: ");
+        int units = sc.nextInt();
+        double billAmount = 0.0;
+        double surcharge =0.0;
+        if (units <= 100) 
+{
+            billAmount = 0; 
+        }
+ else if (units <= 300) 
+{
+            billAmount = (units -100) * 5; 
+        }
+ Else
+ {
+            billAmount = (200 * 5) + ((units - 300) * 10); 
+        }
+        if (units > 500)
+ {
+            surcharge = 0.1 * billAmount; 
+            billAmount += surcharge;
+        }
+        System.out.println("Surcharge Applied: " + surcharge);
+    }
+}
+
+Q8.Write a Java program to check if an entered PIN matches the stored ATM PIN before allowing withdrawal.
+import java.util.Scanner;
+public class cd
+ {
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        int org_pin= 1234; 
+        double balance = 1000.0;     
+        System.out.print("Enter your ATM PIN: ");
+        int enteredpin = sc.nextInt();
+        if (enteredpin ==org_pin) 
+{
+            System.out.print("Enter amount to withdraw:  ");
+            double withdrawAmount = sc.nextDouble();
+            if (withdrawAmount > 0 && withdrawAmount <= balance) 
+{
+                balance -= withdrawAmount;
+                System.out.println("Withdrawn,Remaining balance: +balance);
+            } 
+else if (withdrawAmount > balance)
+ {
+                System.out.println("Insufficient balance");
+            } 
+Else
+ {
+                System.out.println("Invalid withdrawal amount");
+            }
+        } 
+else
+ {
+            System.out.println("Incorrect pin");
+        }
+    }
+}
+
+Q9.Write a Java program to check if withdrawal amount ≤ balance and is a multiple of 100 (ATM Withdrawal Validation).
+import java.util.Scanner;
+public class ATMWithdrawalValidation 
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        double balance = 1000.0; 
+        System.out.print("Enter amount to withdraw: ");
+        double withdrawAmount = sc.nextDouble();
+        if (withdrawAmount <= 0)
+ {
+            System.out.println("Invalid withdrawal amount");
+        } 
+else if (withdrawAmount > balance) 
+{
+            System.out.println("Insufficient balance");
+        } 
+else if (withdrawAmount % 100 != 0)
+ {
+            System.out.println("Withdrawal amount is multiple of 100");
+        } 
+Else
+ {
+            balance -= withdrawAmount;
+            System.out.println("Remaining balance: " + balance);
+        }
+    }
+}
+
+Q10.Write a Java program to print "Stop / Ready / Go" based on traffic light color.
+import java.util.Scanner;
+public class cd
+ {
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter color ");
+        String color = sc.nextLine();
+        switch (color)
+ {
+            case "red":
+                System.out.println("Stop");
+                break;
+            case "yellow":
+                System.out.println("Ready");
+                break;
+            case "green":
+                System.out.println("Go");
+                break;
+            default:
+                System.out.println("Invalid color");
+        }
+    }
+}
+
+Q11.Write a Java program to apply discount based on purchase amount.
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the purchase amount: ");
+        double amount = sc.nextDouble();
+        double discount = 0.0;
+        double finalAmount;
+        if (amount <= 1000)
+ {
+            discount = 0;
+        } 
+else if (amount <= 5000) 
+{
+            discount = 0.10 * amount; 
+        } 
+Else
+ {
+            discount = 0.20 * amount;
+        }
+        finalAmount = amount - discount;
+        System.out.println("Final Amount to Pay: " + finalAmount);
+    }
+}
+
+Q12.Write a Java program to show weather condition (cold, pleasant, hot, heatwave) based on temperature.
+import java.util.Scanner;
+public class cd 
+{
+    public static void main(String[] args)
+ {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the temp: ");
+        double temp = sc.nextDouble;
+        if (temp < 10)
+ {
+            System.out.println("Cold");
+        } 
+else if (temp >= 10 && temp < 20) ;
+            System.out.println("Pleasant");
+        } 
+else if (temp >= 20 && temp < 35)
+ {
+            System.out.println("Hot");
+        } 
+Else
+ {
+            System.out.println("Heat”);
+        }
+    }
+}
+
+Q13.Write a Java program to display mobile battery status (full, moderate, low).
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args)
+ {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter battery percentage ");
+        int battery = sc.nextInt();
+        if (battery < 0 || battery > 100) 
+            System.out.println("Invalid battery percentage.");
+        else if (battery >= 80) 
+            System.out.println("Full");
+        else if (battery >= 30) 
+            System.out.println("Moderate");
+        else 
+            System.out.println(“Low");
+        }
+    }
+}
+
+Q14.Write a Java program to assign ticket price based on passenger age (child, adult, senior).
+import java.util.Scanner;
+public class cd
+ {
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("age: ");
+        int age = sc.nextInt();
+        double price;
+        if (age < 0) {
+            System.out.println("Invalid age");
+        else if (age <= 12) 
+            price = 50
+            System.out.println("Ticket Price: " + price);
+else if (age <= 59) 
+            price = 100; 
+            System.out.println("Ticket Price: " + price);
+        else 
+            price = 70; 
+            System.out.println("Ticket Price: " + price);
+        
+    }
+}
+
+Q15.Write a Java program to check whether vehicle speed exceeds 100 km/h.
+import java.util.Scanner;
+public class cd 
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter speed: ");
+        double speed = sc.nextDouble();
+
+        if (speed < 0) 
+{
+            System.out.println("cannot be negative.");
+        } 
+else if (speed > 100)
+ {
+            System.out.println("exceeds 100 “);
+        } 
+else 
+{
+            System.out.println("safe");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+public class cd
+ {
+    public static void main(String[] args)
+ {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter mobile number: ");
+        String mobile = sc.nextLine();
+        if (mobile.length() >= 10) 
+{
+            System.out.println("Valid Number");
+        } 
+else 
+{
+            System.out.println("Invalid Number");
+        }
+    }
+}
+
+Q17.Write a Java program to assign different ticket prices based on day of the week (weekday/weekend).
+import java.util.Scanner;
+public class cd
+ {
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter week");
+        String day = sc.nextLine();
+        double price;
+        switch(day) 
+{
+            case "monday":
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":
+                price = 100; 
+                System.out.println(" Ticket Price: " + price);
+                break;
+            case "saturday":
+            case "sunday":
+                price = 150;
+                System.out.println("Ticket Price: " + price);
+                break;
+
+            default:
+                System.out.println("Invalid day “);
+        }
+    }
+}
+
+Q18.Write a Java program to calculate water bill using slab rates (≤1000 liters free, next 2000 @ ₹5, above @ ₹10 per 1000 liters).
+import java.util.Scanner;
+public class cd  
+{
+    public static void main(String[] args)
+ {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter water unit");
+        double liters = sc.nextDouble();
+        double bill = 0.0;
+        if (liters <= 1000) 
+{
+            bill = 0; 
+        } 
+else if (liters <= 3000)
+ {
+            bill = (liters - 1000) * 5 / 1000;
+        } 
+Else
+ {
+            bill = 2000 * 5 / 1000; 
+            bill += (liters - 3000) * 10 / 1000; 
+        }
+        System.out.println(" Bill: " + bill);
+    }
+}
+
+Q19.Write a Java program to display mobile data usage alert – "Low Data", "Half Javaonsumed", or "Data Over" based on usage.
+import java.util.Scanner;
+public class cd
+{
+    public static void main(String[] args) 
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.print("data limit ");
+        double totalData = sc.nextDouble();
+        System.out.print("data used: ");
+        double usedData = sc.nextDouble();
+        if (totalData <= 0) 
+{
+            System.out.println("Invalid");
+        } 
+else if (usedData < 0) 
+{
+            System.out.println("Invalid “);
+        } 
+else if (usedData >= totalData)
+ {
+            System.out.println(" Data Over");
+        } 
+else if (usedData >= totalData / 2) 
+{
+            System.out.println("Half Data Consumed");
+        }
+ else 
+{
+            System.out.println("Low Data");
+        }
+    }
+}
+
+Q20.Write a Java program to Javaheck if vehicle speed exceeds 100 km/h.("Over-speeding! Fine imposed.","Speed iswithin limit")
+import java.util.Scanner;
+public class cd 
+{
+    public static void main(String[] args)
+ {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter vehicle speed ");
+        double speed = sc.nextDouble();
+        if (speed < 0) 
+{
+            System.out.println("Invalid speed.");
+        } 
+else if (speed > 100)
+ {
+            System.out.println("Over-speed");
+        }
+ else
+ {
+            System.out.println("within limit.");
+        }
+    }
+}
+
